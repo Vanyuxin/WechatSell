@@ -1,0 +1,22 @@
+#logging:
+#  pattern:
+#    #设置控制台输出的日志格式
+#    console: "%d - %msg%n"
+#  #设置文件路径
+#  #用path: D:\Javacode\sell\log\ 会在log文件夹下面生成Spring.log文件
+#  file: D:\Javacode\sell\log\sell.log
+#  #设置级别
+#  level:
+#    #设置所有类的方法
+#    root: error
+#    #单独设置一个类的方法,优先级更高
+#    com.wechatorder.sell: debug
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.86.128/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
