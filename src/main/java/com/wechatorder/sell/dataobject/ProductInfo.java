@@ -26,7 +26,7 @@ public class ProductInfo {
     private String productDescription;
     //小图
     private String productIcon;
-    //状态，0正常，1下架
+    //状态，0正常，1下架，原本表里没有，需要另外加上
     private Integer productStatus;
     //类目编号
     private Integer categoryType;
