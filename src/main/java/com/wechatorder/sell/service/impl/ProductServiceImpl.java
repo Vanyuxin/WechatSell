@@ -1,7 +1,10 @@
 package com.wechatorder.sell.service.impl;
 
 import com.wechatorder.sell.dataobject.ProductInfo;
+import com.wechatorder.sell.dto.CartDTO;
 import com.wechatorder.sell.enums.ProductStatusEnum;
+import com.wechatorder.sell.enums.ResultEnum;
+import com.wechatorder.sell.exception.SellException;
 import com.wechatorder.sell.repository.ProductinfoRepository;
 import com.wechatorder.sell.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 /**
@@ -37,7 +41,41 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductInfo save(ProductInfo productInfo) {
-        return repository.save(productInfo);
+    public ProductInfo save(ProductInfo productInfo) { return repository.save(productInfo); }
+
+    @Override
+    @Transactional
+    public void increaseStock(List<CartDTO> cartDTOList) {
+        for(CartDTO cartDTO: cartDTOList){
+            ProductInfo productInfo = repository.findOne(cartDTO.getProductId());
+            if(productInfo == null){
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+            Integer result = productInfo.getProductStock() + cartDTO.getProductQuantity();
+            productInfo.setProductStock(result);
+
+            repository.save(productInfo);
+        }
+
+    }
+
+    @Override
+    @Transactional
+    public void decreaseStock(List<CartDTO> cartDTOList) {
+        for(CartDTO cartDTO: cartDTOList){
+            ProductInfo productInfo = repository.findOne(cartDTO.getProductId());
+            if(productInfo == null){
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+
+            Integer result = productInfo.getProductStock() - cartDTO.getProductQuantity();
+            if(result < 0){
+                throw new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
+            }
+
+            productInfo.setProductStock(result);
+
+            repository.save(productInfo);
+        }
     }
 }
