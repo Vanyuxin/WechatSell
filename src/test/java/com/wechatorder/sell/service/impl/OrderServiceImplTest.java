@@ -3,6 +3,8 @@ package com.wechatorder.sell.service.impl;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.wechatorder.sell.dataobject.OrderDetail;
 import com.wechatorder.sell.dto.OrderDTO;
+import com.wechatorder.sell.enums.OrderStatusEnum;
+import com.wechatorder.sell.enums.PayStatusEnum;
 import com.wechatorder.sell.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.weaver.ast.Or;
@@ -74,13 +76,22 @@ public class OrderServiceImplTest {
 
     @Test
     public void cancel() {
+        OrderDTO orderDTO = orderService.findOne(ORDER_ID);
+        OrderDTO result =  orderService.cancel(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(), result.getOrderStatus());
     }
 
     @Test
     public void finish() {
+        OrderDTO orderDTO = orderService.findOne(ORDER_ID);
+        OrderDTO result =  orderService.finish(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(), result.getOrderStatus());
     }
 
     @Test
     public void paid() {
+        OrderDTO orderDTO = orderService.findOne(ORDER_ID);
+        OrderDTO result =  orderService.paid(orderDTO);
+        Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(), result.getPayStatus());
     }
 }
