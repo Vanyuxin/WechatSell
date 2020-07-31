@@ -31,7 +31,7 @@ public class OrderForm2OrderDTOConveter {
 
         List<OrderDetail> orderDetailList = new ArrayList<>();
         try{
-            gson.fromJson(orderForm.getItems(), new TypeToken<List<OrderDetail>>(){
+            orderDetailList = gson.fromJson(orderForm.getItems(), new TypeToken<List<OrderDetail>>(){
             }.getType());
         } catch (Exception e){
             log.error("【对象转换】错误，String={}", orderForm.getItems());
