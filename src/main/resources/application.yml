@@ -24,3 +24,21 @@ spring:
     default-property-inclusion: non_null
 server:
   context-path: /sell
+
+wechat:
+  #授权
+  myAuthorizeApp: wx605280fa0b466faa
+  myAuthorizeAppSecret: bc81d0238d4196edf77d8b2debf0a5cb
+
+  #公众账号
+  mpAppId: wxd898fcb01713c658 #已改
+  mpAppSecret:
+  #开发平台，卖家扫码登陆
+
+  #支付/商户号
+  mchId: 1483469312
+  mchKey: 098F6BCD4621D373CADE4E832627B4F6
+  #发起支付不需要证书，退款要
+  keyPath: D:\WechatOrdering\resorce\h5.p12
+  #异步通知
+  notifyUrl: http://kevinsell.nat300.top/sell/pay/notify

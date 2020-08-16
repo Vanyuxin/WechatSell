@@ -1,0 +1,390 @@
+Starting PayServiceImplTest on DESKTOP-PLABHO1 with PID 14008 (started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1d7f7be7: startup date [Tue Aug 04 10:05:12 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1d7f7be7: startup date [Tue Aug 04 10:05:12 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started PayServiceImplTest in 12.166 seconds (JVM running for 15.802)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1d7f7be7: startup date [Tue Aug 04 10:05:12 PDT 2020]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on DESKTOP-PLABHO1 with PID 20404 (started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@57bc27f5: startup date [Tue Aug 04 10:21:06 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@57bc27f5: startup date [Tue Aug 04 10:21:06 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started PayServiceImplTest in 4.685 seconds (JVM running for 5.391)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】 request=PayRequest(payTypeEnum=WXPAY_H5, orderId=1595974724949502180, orderAmount=3.2, orderName=微信点餐订单, openid=1595974724949502180)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@57bc27f5: startup date [Tue Aug 04 10:21:06 PDT 2020]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on DESKTOP-PLABHO1 with PID 13256 (started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:23:14 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:23:14 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started PayServiceImplTest in 4.666 seconds (JVM running for 5.35)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】 request=PayRequest(payTypeEnum=WXPAY_H5, orderId=1595974724949502180, orderAmount=3.2, orderName=微信点餐订单, openid=1211)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:23:14 PDT 2020]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on DESKTOP-PLABHO1 with PID 5944 (started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@57bc27f5: startup date [Tue Aug 04 10:28:18 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@57bc27f5: startup date [Tue Aug 04 10:28:18 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started PayServiceImplTest in 4.857 seconds (JVM running for 5.557)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】 request=PayRequest(payTypeEnum=WXPAY_H5, orderId=1595974724949502180, orderAmount=3.2, orderName=微信点餐订单, openid=oTgZpwd99SD0UmPZN16o0FEeu3L0)
+【微信支付response】=PayResponse(prePayParams=null, payUri=null, appId=wxd898fcb01713c658, timeStamp=1596562106, nonceStr=JgStMC5l36HhAQbx, packAge=prepay_id=wx05012826114574ceff9da3581739293000, signType=MD5, paySign=7C27C8BA84E241D60CFDAED28DA1D80D, orderAmount=null, orderId=null, outTradeNo=null)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@57bc27f5: startup date [Tue Aug 04 10:28:18 PDT 2020]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on DESKTOP-PLABHO1 with PID 3092 (started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:31:57 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:31:57 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started PayServiceImplTest in 5.034 seconds (JVM running for 5.784)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1595974724949502180",
+  "orderAmount": 3.2,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwd99SD0UmPZN16o0FEeu3L0"
+}
+【微信支付response】={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1596562325",
+  "nonceStr": "1t2kHZs3ViJRoXYT",
+  "packAge": "prepay_id\u003dwx05013205017026ceff9da3581328811000",
+  "signType": "MD5",
+  "paySign": "6091C0FC59C92DE37ED82A057998ACD3"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:31:57 PDT 2020]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting PayServiceImplTest on DESKTOP-PLABHO1 with PID 9484 (started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:42:16 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:42:16 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started PayServiceImplTest in 4.855 seconds (JVM running for 5.617)
+HHH000397: Using ASTQueryTranslatorFactory
+【微信支付】 request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1595974724949502180",
+  "orderAmount": 3.2,
+  "orderName": "微信点餐订单",
+  "openid": "oTgZpwd99SD0UmPZN16o0FEeu3L0"
+}
+【微信支付response】={
+  "appId": "wxd898fcb01713c658",
+  "timeStamp": "1596562945",
+  "nonceStr": "aHUbaTTgLXgDri05",
+  "packAge": "prepay_id\u003dwx05014225460553ceff9da3581298694000",
+  "signType": "MD5",
+  "paySign": "F8BBE1808A6DBFEAC589DDBB3D010115"
+}
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5c7933ad: startup date [Tue Aug 04 10:42:16 PDT 2020]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on DESKTOP-PLABHO1 with PID 5044 (D:\Javacode\sell\target\classes started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3590fc5b: startup date [Tue Aug 04 10:42:27 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1077 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3590fc5b: startup date [Tue Aug 04 10:42:27 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.621 seconds (JVM running for 4.722)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on DESKTOP-PLABHO1 with PID 3844 (D:\Javacode\sell\target\classes started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d1cfb8b: startup date [Tue Aug 04 10:48:51 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1111 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d1cfb8b: startup date [Tue Aug 04 10:48:51 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 4.184 seconds (JVM running for 5.425)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d1cfb8b: startup date [Tue Aug 04 10:48:51 PDT 2020]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting SellApplication on DESKTOP-PLABHO1 with PID 7944 (D:\Javacode\sell\target\classes started by g7 in D:\Javacode\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3590fc5b: startup date [Tue Aug 04 11:22:58 PDT 2020]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.5.Final
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+Tomcat initialized with port(s): 8080 (http)
+Starting service Tomcat
+Starting Servlet Engine: Apache Tomcat/8.5.14
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1004 ms
+Mapping servlet: 'dispatcherServlet' to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3590fc5b: startup date [Tue Aug 04 11:22:58 PDT 2020]; root of context hierarchy
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.wechatorder.sell.controller.BuyerOrderController.create(com.wechatorder.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<java.util.List<com.wechatorder.sell.dto.OrderDTO>> com.wechatorder.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/order/cancel],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.cancel(java.lang.String,java.lang.String)
+Mapped "{[/buyer/order/detail],methods=[POST]}" onto public com.wechatorder.sell.VO.ResultVO<com.wechatorder.sell.dto.OrderDTO> com.wechatorder.sell.controller.BuyerOrderController.detail(java.lang.String,java.lang.String)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.wechatorder.sell.VO.ResultVO com.wechatorder.sell.controller.BuyerProductController.list()
+Mapped "{[/pay/create],methods=[GET]}" onto public void com.wechatorder.sell.controller.PayController.create(java.lang.String,java.lang.String)
+Mapped "{[/wechat/userInfo],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.userInfo(java.lang.String,java.lang.String)
+Mapped "{[/wechat/authorize],methods=[GET]}" onto public java.lang.String com.wechatorder.sell.controller.WeChatController.authorize(java.lang.String)
+Mapped "{[/weixin/auth],methods=[GET]}" onto public void com.wechatorder.sell.controller.WeixinController.auth(java.lang.String)
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http)
+Started SellApplication in 3.613 seconds (JVM running for 4.648)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+HHH000397: Using ASTQueryTranslatorFactory

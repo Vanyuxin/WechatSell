@@ -1,5 +1,6 @@
 package com.wechatorder.sell.controller;
 
+import com.lly835.bestpay.rest.type.Get;
 import com.wechatorder.sell.VO.ResultVO;
 import com.wechatorder.sell.converter.OrderForm2OrderDTOConveter;
 import com.wechatorder.sell.dto.OrderDTO;
@@ -57,7 +58,7 @@ public class BuyerOrderController {
         return ResultVOUtil.success(map);
     }
     //订单列表
-    @PostMapping("/list")
+    @GetMapping("/list")
     public ResultVO<List<OrderDTO>> list(@RequestParam("openid") String openid,
                                          @RequestParam(value = "page", defaultValue = "0") Integer page,
                                          @RequestParam(value = "size", defaultValue = "10") Integer size){
@@ -73,7 +74,7 @@ public class BuyerOrderController {
     }
 
     //订单详情
-    @PostMapping("/detail")
+    @GetMapping("/detail")
     public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
                                      @RequestParam("orderId") String orderId){
         OrderDTO orderDTO = buyerService.findOrderOne(openid, orderId);
@@ -86,9 +87,7 @@ public class BuyerOrderController {
     @PostMapping("/cancel")
     public ResultVO<OrderDTO> cancel(@RequestParam("openid") String openid,
                                      @RequestParam("orderId") String orderId){
-        OrderDTO orderDTO = buyerService.cancelOrder(openid, orderId);
-        orderService.cancel(orderDTO);
-
+        buyerService.cancelOrder(openid, orderId);
         return ResultVOUtil.success();
     }
 

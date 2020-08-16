@@ -13,6 +13,7 @@ import com.wechatorder.sell.exception.SellException;
 import com.wechatorder.sell.repository.OrderDetailRepository;
 import com.wechatorder.sell.repository.OrderMasterRepository;
 import com.wechatorder.sell.service.OrderService;
+import com.wechatorder.sell.service.PayService;
 import com.wechatorder.sell.service.ProductService;
 import com.wechatorder.sell.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -48,6 +49,9 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderMasterRepository orderMasterRepository;
 
+    @Autowired
+    private PayService payService;
+
     @Override
     @Transactional
     public OrderDTO create(OrderDTO orderDTO) {
@@ -80,6 +84,8 @@ public class OrderServiceImpl implements OrderService {
         orderMaster.setOrderAmount(orderAmount);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
+        //TODO
+        //orderMaster.setBuyerOpenid("oTgZpwes1yqGU7r8MS1dbMYwQsuE");
         orderMasterRepository.save(orderMaster);
 
         //4.扣库存 Redis锁的位置
@@ -150,7 +156,7 @@ public class OrderServiceImpl implements OrderService {
 
         //如果已支付，需要退款
         if(orderDTO.getPayStatus().equals(PayStatusEnum.SUCCESS.getCode())){
-            //TODO
+            payService.refund(orderDTO);
         }
         return orderDTO;
     }
@@ -202,5 +208,13 @@ public class OrderServiceImpl implements OrderService {
         }
 
         return orderDTO;
+    }
+
+    @Override
+    public Page<OrderDTO> findList(Pageable pageable) {
+        Page<OrderMaster> orderMasterPage = orderMasterRepository.findAll(pageable);
+        List<OrderDTO> orderDTOList = OrderMaster2OrderDTOConverter.convert(orderMasterPage.getContent());
+
+        return new PageImpl<>(orderDTOList, pageable, orderMasterPage.getTotalElements());
     }
 }
